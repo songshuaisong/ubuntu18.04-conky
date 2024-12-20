@@ -14,6 +14,15 @@
 
 一个ubuntu环境下的桌面美化工具，已经调试完成。
 
+> 关于显示日历的说明：
+>
+> 1. 如果想要正常显示日历的话，那么每个月初需要手动执行脚本 `perl ./calendar.pl > calendar.txt` 生成日历显示文件内容。
+>
+> 2. 将 *calendar.txt* 中的内容复制粘贴到 *Shelyak-Dark.conf* 中最后位置（"]]"之前）。
+>
+> 3. 重新启动 conky 即可正常了。
+
+
 # 1. 准备工作
 
 首先下载并安装conky，使用如下指令：
@@ -95,9 +104,39 @@ $ chmod u+x myconky.desktop
 $ sudo cp myconky.desktop /etc/xdg/autostart
 ```
 
+# 6. ccal-2.5.3.tar.gz
+
+一个农历的日期转换的工具，如果想要显示农历日历的话则需要安装此工具。
+
+```bash
+$ tar -zxvf ccal-2.5.3.tar.gz
+$ cd ccal-2.5.3
+$ make
+$ sudo make install
+```
+
+使用格式 `usage: cal [-13smjyV] [[month] year]`
+
+参数介绍：
+> -1      输出显示当前月(默认)
+> <br>-3      输出显示前一个/当前/下一个月
+> <br>-s      输出显示星期天作为一周的第一天(默认)
+> <br>-m      输出显示星期一作为一周的第一天
+> <br>-j      输出显示Julian日历(从一月1号计数为1起，每一天计数加1)
+> <br>-y      显示当前日历
+
+
 # 参考来源
 
 本文还没有产生之前使用的参考文档：
 
 https://blog.csdn.net/weixin_43268374/article/details/135755979
 
+
+# 最终效果
+
+
+&emsp;&emsp;<font face="courier new" >实际显示下过就像下图所示，看着也是感觉差点意思。</font>
+
+<center class="half"> <img src="image/image.png" width="300"/> </center><center class="half"> <font face="courier new" size=2>效果图</center></font>
+<br>

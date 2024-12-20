@@ -1,14 +1,14 @@
 #!/bin/bash
 ###
  # @FilePath    : ctof.sh
- # @Description :
+ # @Description : 获取CPU温度
  # @Author      : Songshuai
  # @Date        : 2024-12-18 15:24:28
  # @Copyright (c) 2024 by Songshuai(Songshuai223@gmail.com), All Rights Reserved.
  #
  # @History record
  #  version     date      auther     changes
- #  V0.1.0  currenttime  Songshuai    Create
+ #  V0.1.0  2024-12-18  Songshuai    Create
 ###
 
 # Variable
