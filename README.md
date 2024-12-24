@@ -1,4 +1,4 @@
-# ubuntu18.04-conky
+
 
 <!--
  * @FilePath    : README.md
@@ -11,6 +11,9 @@
  *  version     date      auther     changes
  *  V0.1.0  2024-12-18  Songshuai    Create
 -->
+
+<center class="half"><font face="FreeMono" size=7>ubuntu18.04-conky</center></font>
+<br>
 
 一个ubuntu环境下的桌面美化工具，已经调试完成。
 
@@ -58,6 +61,7 @@ $ mkdir conky
 ```bash
 $ cp ShelyakDark ~/.config/conky -a
 ```
+
 # 4. 启动软件
 
 可以在任何位置下面执行指令启动：
@@ -71,6 +75,8 @@ $ sh start.sh
 ```
 
 # 5. 设置自启动
+
+## 5.1. 第一种方法
 
 这个也很简单的，查看当前目录下是否存在myconky.desktop文件，并且是否具有可执行权限，通过指令查看：
 ```bash
@@ -104,6 +110,29 @@ $ chmod u+x myconky.desktop
 $ sudo cp myconky.desktop /etc/xdg/autostart
 ```
 
+<font face="courier new" color=red>**注**：*此种方法在ubuntu18.04上面并没有成功，暂时不知道原因先做记录，后续有空再进行问题排查。*</font>
+
+## 5.2. 第二种方法
+
+通过界面进行启动项的添加。
+
+首先打开启动应用程序首选项配置界面，在终端输入如下指令：
+```bash
+gnome-session-properties
+```
+
+然后选择“Add”，进行启动项的添加。实际显示下效果如下图所示。
+
+<center class="half"> <img src="image/1111" width="300"/> </center><center class="half"> <font face="courier new" size=2>示意图1</center></font>
+<br>
+
+然后按照输入框依次输入相关信息。实际显示下效果如下图所示。
+
+<center class="half"> <img src="image/2222" width="300"/> </center><center class="half"> <font face="courier new" size=2>示意图2</center></font>
+<br>
+
+最后关闭启动应用程序首选项。重启ubuntu系统后立马生效。
+
 # 6. ccal-2.5.3.tar.gz
 
 一个农历的日期转换的工具，如果想要显示农历日历的话则需要安装此工具。
@@ -126,17 +155,17 @@ $ sudo make install
 > <br>-y      显示当前日历
 
 
-# 参考来源
+# 7. 参考来源
 
 本文还没有产生之前使用的参考文档：
 
 https://blog.csdn.net/weixin_43268374/article/details/135755979
 
 
-# 最终效果
+# 8. 最终效果
 
 
-&emsp;&emsp;<font face="courier new" >实际显示下过就像下图所示，看着也是感觉差点意思。</font>
+&emsp;&emsp;<font face="courier new" >实际显示下效果如下图所示，看着也是感觉差点意思。</font>
 
 <center class="half"> <img src="image/image.png" width="300"/> </center><center class="half"> <font face="courier new" size=2>效果图</center></font>
 <br>
