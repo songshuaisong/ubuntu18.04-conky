@@ -10,6 +10,7 @@
  * @History record
  *  version     date      auther     changes
  *  V0.1.0  2024-12-18  Songshuai    Create
+ *  V0.1.1  2024-12-24  Songshuai    新增设置自启动的方法
 -->
 
 <center class="half"><font face="FreeMono" size=7>ubuntu18.04-conky</center></font>
